@@ -60,7 +60,7 @@ ul {
   padding: 0 15px;
   margin-right: auto;
   margin-left: auto;
-  /* outline: solid red; */
+  outline: solid red;
 }
 
 /* Header */
@@ -330,11 +330,12 @@ ul {
 .work-examples {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
 .work-item {
   width: 370;
-  margin-right: 30px;
+  margin: 15px;
 }
 
 .work-item:nth-child(3n) {
@@ -388,4 +389,16 @@ ul {
 .works-type {
   font-size: 16px;
   line-height: 1.88;
+}
+
+.work-item-info {
+  padding: 20px;
+
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.works-title {
+  margin-bottom: 4px;
 }
