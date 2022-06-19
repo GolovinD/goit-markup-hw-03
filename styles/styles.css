@@ -60,7 +60,7 @@ ul {
   padding: 0 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: solid red;
+  /* outline: solid red; */
 }
 
 /* Header */
@@ -147,7 +147,12 @@ ul {
 
 .hero-section {
 }
-
+.container.benefits,
+.section-team,
+.container.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .container.hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -206,8 +211,6 @@ ul {
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 94px;
-  padding-bottom: 91px;
 }
 
 .benefits-item {
@@ -315,11 +318,6 @@ ul {
 }
 
 /* Portfolio */
-
-.container.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .works-menu {
   display: flex;
