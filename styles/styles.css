@@ -330,6 +330,13 @@ ul {
   color: var(--tertiary-txt-color);
 }
 
+.address-footer:hover,
+.address-footer:focus,
+.contact-footer:hover,
+.contact-footer:focus {
+  color: var(--accent-color);
+}
+
 /* Portfolio */
 
 .works-menu {
