@@ -67,7 +67,13 @@ ul {
 .header-container {
   display: flex;
   align-items: center;
+}
+.line {
+  margin: 0 auto;
+  width: 1200px;
+  height: 3px;
   border-bottom: 1px solid #ececec;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* .header-container.portfolio {
@@ -148,7 +154,7 @@ ul {
 .hero-section {
 }
 .container.benefits,
-.section-team,
+.container.team,
 .container.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -252,9 +258,10 @@ ul {
   margin-right: 30px;
 }
 
-.container.team {
-  background-color: var(--secondary-theme);
+.container.services {
+  padding-bottom: 94px;
 }
+
 /* Team */
 
 .team-list {
@@ -281,6 +288,12 @@ ul {
   line-height: 1.19px;
   text-align: center;
   color: var(--secondary-txt-color);
+}
+
+.section-team {
+}
+.container.team {
+  background-color: var(--secondary-theme);
 }
 .job-title {
   margin-bottom: 10px;
