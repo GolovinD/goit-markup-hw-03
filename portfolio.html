@@ -14,35 +14,39 @@
     <!-- Normalize styles -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <!-- Header -->
     <header>
-      <div class="container">
+      <div class="container header-container">
         <!-- Navigation -->
-        <nav>
+        <nav class="nav-container">
           <a class="logo" href="./index.html">
             <span class="logo-color">Web</span>Studio</a
           >
-          <ul>
-            <li><a class="nav-link" href="./index.html">Студия</a></li>
-            <li>
-              <a class="nav-link current" href="./portfolio.html">Портфолио</a>
+          <ul class="nav-link-container">
+            <li class="link-item">
+              <a class="nav-link current" href="./index.html">Студия</a>
             </li>
-            <li><a class="nav-link" href="#Contacts">Контакты</a></li>
+            <li class="link-item">
+              <a class="nav-link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="link-item">
+              <a class="nav-link" href="#Contacts">Контакты</a>
+            </li>
           </ul>
         </nav>
         <!--Contacts-->
-        <ul>
-          <li>
+        <ul class="head-contacts">
+          <li class="contacts-item">
             <a class="contact-header" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="contacts-item">
             <a class="contact-header" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
@@ -54,10 +58,10 @@
     <main>
       <!-- Works -->
       <section>
-        <div class="container work-examples">
+        <div class="container portfolio">
           <h1 hidden>Works</h1>
           <!-- Works menu-->
-          <ul>
+          <ul class="works-menu">
             <li><button type="button" class="works-btn">Все</button></li>
             <li><button type="button" class="works-btn">Веб-сайты</button></li>
             <li><button type="button" class="works-btn">Приложения</button></li>
@@ -168,8 +172,8 @@
     </main>
     <!-- Footer -->
     <footer>
-      <div class="container">
-        <a class="logo" href="./index.html">
+      <div class="container footer-container">
+        <a class="logo logo-footer" href="./index.html">
           <span class="logo-color">Web</span
           ><span class="logo-color-footer">Studio</span></a
         >
