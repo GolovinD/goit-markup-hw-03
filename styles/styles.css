@@ -58,7 +58,8 @@ ul {
 .container {
   width: 1600px;
   padding: 0 215px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   outline: solid red;
 }
 
@@ -135,8 +136,21 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
+/* Section */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.82;
+  color: var(--secondary-txt-color);
+  letter-spacing: 0.03em;
+}
 /* Hero */
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hero-section {
   background-color: var(--accent-theme);
 }
@@ -183,13 +197,16 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-/* Section */
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.82;
-  color: var(--secondary-txt-color);
-  letter-spacing: 0.03em;
+
+/* Benefits */
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefits-item {
+  width: 270px;
 }
 
 .benefits-subtitle {
@@ -249,6 +266,28 @@ footer {
 }
 
 /* Portfolio */
+
+.container .work-examples {
+  width: 1170px;
+  padding-right: 215;
+  padding-left: 215;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.work-examples {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-item {
+  width: 370;
+  margin-right: 30px;
+}
+
+.work-item:nth-child(3n) {
+  margin-right: 0px;
+}
 
 .works-btn {
   font-family: "Roboto";
