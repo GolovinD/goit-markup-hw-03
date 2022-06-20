@@ -48,6 +48,7 @@ body {
   color: var(--main-txt-color);
   background-color: var(--main-theme);
   font-size: 14px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 h1,
@@ -55,7 +56,7 @@ h2,
 h3,
 h4,
 p {
-  margin: 0px;
+  margin: 0;
 }
 
 img {
@@ -77,29 +78,24 @@ ul {
 }
 
 /* Header */
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-container {
   display: flex;
   align-items: center;
 }
-.line {
-  margin: 0 auto;
-  width: 1200px;
-  height: 3px;
-  border-bottom: 1px solid #ececec;
-  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
-}
-
-/* .header-container.portfolio {
-  border-bottom: 1px solid #ececec;
-  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
-} */
 
 .logo {
+  padding-top: 25px;
+  padding-bottom: 24px;
+
   font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 1.19;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   color: #000000;
   margin-right: 93px;
   display: block;
@@ -111,6 +107,8 @@ ul {
 
 /* Navigation */
 .nav-link {
+  padding: 32px 0px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -141,6 +139,8 @@ ul {
 
 /* Contacts */
 .contact-header {
+  padding: 32px 0px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -165,18 +165,18 @@ ul {
 /* Hero */
 
 .hero-section {
-}
-.container.benefits,
-.container.team,
-.container.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.container.hero {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
   background-color: var(--accent-theme);
+}
+
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container.hero {
 }
 
 .hero-title {
@@ -249,6 +249,7 @@ ul {
   text-transform: uppercase;
   color: var(--secondary-txt-color);
 }
+
 /* Services */
 
 .section-title {
@@ -257,7 +258,7 @@ ul {
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.82;
+  line-height: 1.17;
   color: var(--secondary-txt-color);
   letter-spacing: 0.03em;
 }
@@ -283,6 +284,7 @@ ul {
 }
 
 .team-item {
+  background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -298,18 +300,20 @@ ul {
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19px;
+  line-height: 1.19;
   text-align: center;
   color: var(--secondary-txt-color);
 }
 
 .section-team {
-}
-.container.team {
   background-color: var(--secondary-theme);
 }
+
+.container.team {
+}
+
 .job-title {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 
   font-size: 16px;
   line-height: 1.19;
@@ -317,7 +321,7 @@ ul {
 }
 
 /* Footer */
-.footer-container {
+footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -332,6 +336,8 @@ ul {
   color: var(--tertiary-txt-color);
 }
 .contact-footer {
+  margin-top: 9px;
+
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
@@ -339,7 +345,7 @@ ul {
 
 .address-footer {
   font-style: normal;
-  line-height: 1.71px;
+  line-height: 1.71;
   color: var(--tertiary-txt-color);
 }
 
@@ -365,28 +371,28 @@ ul {
 }
 
 .work-item {
-  width: 370;
+  width: 370px;
   margin: 15px;
 }
 
 .work-item:nth-child(3n) {
   margin-right: 0px;
 }
+.works-menu li:not(:last-child) {
+  margin-right: 8px;
+}
 
 .works-btn {
-  margin-right: 8px;
+  padding: 6px 22px;
 
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  border: 0px;
   color: var(--secondary-txt-color);
   background: var(--secondary-theme);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border-color: var(--secondary-theme);
   cursor: pointer;
@@ -394,19 +400,10 @@ ul {
 
 .works-btn:hover,
 .works-btn:focus {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
   color: var(--tertiary-txt-color);
   background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 .works-title {
@@ -423,7 +420,7 @@ ul {
 }
 
 .work-item-info {
-  padding: 20px;
+  padding: 20px 24px;
 
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
